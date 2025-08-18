@@ -1,2 +1,3 @@
 # nixos-laptop
-Personal configuration for my laptop
+
+Personal NixOS laptop configuration
