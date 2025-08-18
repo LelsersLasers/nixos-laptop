@@ -93,10 +93,18 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+
+    # CLI editors
     vim
     helix
+
+    # Code tools
     git
+
+    # CLI tools
     htop
+    eza
+    cmatrix
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
