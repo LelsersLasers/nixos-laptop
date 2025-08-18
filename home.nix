@@ -18,6 +18,19 @@
       };
     };
 
+
+    programs.git = {
+      enable = true;
+      userName = "LelsersLasers";
+      userEmail = "millankumar@gmail.com";
+    };
+    programs.gh = {
+      enable = true;
+      gitCredentialHelper = {
+        enable = true;
+      };
+    };
+
     home.stateVersion = "25.05";
 
     programs.home-manager.enable = true;
