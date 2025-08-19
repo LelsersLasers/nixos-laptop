@@ -118,6 +118,22 @@
     htop
     eza
     cmatrix
+
+    # GUI apps
+    google-chrome
+    calibre
+    discord
+    slack
+    libreoffice-fresh
+
+    # GUI tools
+    alacritty
+    github-desktop
+    vscode
+    arduino
+
+    # Programming
+    python3
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
