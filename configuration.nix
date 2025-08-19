@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, helix, ... }:
 
 {
   imports =
@@ -16,9 +16,22 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+
+  # Caps lock = escape key
+  services.xserver.xkb.options = "caps:escape";
+
   # VMware only
   virtualisation.vmware.guest.enable = true;
   services.xserver.videoDrivers = [ "vmware" ];
+
+
+  # Automatic clean up
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than +3";  # Keep last 3 generations, delete older
+  };
+  nix.settings.auto-optimise-store = true;
 
   # Enable networking
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
