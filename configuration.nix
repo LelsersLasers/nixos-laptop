@@ -134,6 +134,7 @@
 
     # Programming
     python3
+    jdk
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
