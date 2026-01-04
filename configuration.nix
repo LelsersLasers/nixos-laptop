@@ -21,8 +21,8 @@
   services.xserver.xkb.options = "caps:escape";
 
   # VMware only
-  # virtualisation.vmware.guest.enable = true;
-  # services.xserver.videoDrivers = [ "vmware" ];
+  virtualisation.vmware.guest.enable = true;
+  services.xserver.videoDrivers = [ "vmware" ];
 
 
   # Automatic clean up
