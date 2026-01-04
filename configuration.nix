@@ -129,7 +129,7 @@
     # GUI tools
     alacritty
     github-desktop
-    vscode
+    vscode.fhs
     arduino #v1
     arduino-ide #v2
 
