@@ -130,7 +130,8 @@
     alacritty
     github-desktop
     vscode
-    arduino
+    arduino #v1
+    arduino-ide #v2
 
     # Programming
     python3
