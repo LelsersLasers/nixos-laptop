@@ -113,6 +113,7 @@
 
     # Code tools
     git
+    gh
 
     # CLI tools
     htop
