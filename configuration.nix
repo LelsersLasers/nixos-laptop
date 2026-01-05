@@ -133,7 +133,7 @@
     home-manager.useUserPackages = true;
     home-manager.backupFileExtension = "hm-backup";
     users.millankumar = import ./home.nix;
-  }
+  };
 
   # Install firefox.
   programs.firefox.enable = true;
