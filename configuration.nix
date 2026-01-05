@@ -130,8 +130,8 @@
   # Home manager
   home-manager = {
     useGlobalPkgs = true;
-    home-manager.useUserPackages = true;
-    home-manager.backupFileExtension = "hm-backup";
+    useUserPackages = true;
+    backupFileExtension = "hm-backup";
     users.millankumar = import ./home.nix;
   };
 
