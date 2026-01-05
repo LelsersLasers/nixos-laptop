@@ -75,6 +75,9 @@
   # Enable hyprland
   programs.hyprland.enable = true;
 
+  # Allow ozone wayland backend
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
