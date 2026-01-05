@@ -147,7 +147,7 @@
     hyprpaper
     waybar
     wofi
-    mako
+    swaynotificationcenter
     pipewire
     wireplumber
     hyprpolkitagent
