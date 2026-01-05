@@ -23,7 +23,7 @@
         settings.user = {
             name = "LelsersLasers";
             email = "millankumar@gmail.com";
-        }
+        };
     };
     programs.gh = {
         enable = true;
