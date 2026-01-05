@@ -65,11 +65,14 @@
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     gnome-user-docs
+    epiphany
+    gnome-clocks
     gnome-contacts
-    gnome-connections
     gnome-maps
-    gnome-help
     gnome-music
+    simple-scan
+    gnome-connections
+    yelp
 ];
 
   # Enable hyprland
