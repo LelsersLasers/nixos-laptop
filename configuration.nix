@@ -77,9 +77,13 @@
 
   # Enable hyprland
   programs.hyprland.enable = true;
+  programs.waybar.enable = true;
 
   # Allow ozone wayland backend
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
+  # Enable flatpak
+  services.flatpak.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -124,6 +128,15 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    # hypr
+    hyprland
+    hyprpaper
+    waybar
+    wofi
+    mako
+    pipewire
+    wireplumber
+    hyprpolkitagent
 
     # CLI editors
     vim
