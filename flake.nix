@@ -15,7 +15,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, helix-master, ... }:
+  outputs = { self, nixpkgs, helix-master, home-manager, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
