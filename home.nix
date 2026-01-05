@@ -18,6 +18,7 @@
       };
     };
 
+    programs.helix = import ./helix/config.nix;
 
     programs.git = {
       enable = true;
