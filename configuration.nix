@@ -62,6 +62,18 @@
   # Enable the GNOME Plasma Desktop Environment
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-tour
+    gnome-user-docs
+    gnome-contacts
+    gnome-connections
+    gnome-maps
+    gnome-help
+    gnome-music
+];
+
+  # Enable hyprland
+  programs.hyprland.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
