@@ -76,7 +76,10 @@
     simple-scan
     gnome-connections
     yelp
-];
+  ];
+
+  # Enable COSMIC desktop environment
+  services.cosmic.enable = true;
 
   # Enable hyprland
   programs.hyprland.enable = true;
