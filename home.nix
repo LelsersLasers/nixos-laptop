@@ -4,6 +4,9 @@
     home.username = "millankumar";
     home.homeDirectory = "/home/millankumar";
 
+    # COSMIC
+    home.file.".config/cosmic/".source = ./cosmic;
+
     programs.bash = {
         enable = true;
         shellAliases = {
