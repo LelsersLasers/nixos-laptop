@@ -92,4 +92,4 @@
         inherits = "rose_pine_moon";
         ui.background = { };
       };
-    };
+    }
