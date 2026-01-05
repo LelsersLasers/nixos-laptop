@@ -26,6 +26,7 @@
         modules = [
           ./configuration.nix
           { _module.args.helix = helix; }
+          home-manager.nixosModules.home-manager
         ];
       };
   };
