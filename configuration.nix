@@ -79,7 +79,7 @@
   ];
 
   # Enable COSMIC desktop environment
-  services.cosmic.enable = true;
+  services.desktopManager.cosmic.enable = true;
 
   # Enable hyprland
   programs.hyprland.enable = true;
