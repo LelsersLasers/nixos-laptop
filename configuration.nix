@@ -147,12 +147,12 @@
     # hypr
     hyprland
     hyprpaper
+    hyprshot
     waybar
     wofi
     swaynotificationcenter
     wireplumber
     hyprpolkitagent
-    spotify
 
     # CLI editors
     vim
@@ -173,6 +173,7 @@
     discord
     slack
     libreoffice-fresh
+    spotify
 
     # GUI tools
     alacritty
