@@ -135,11 +135,12 @@
     users.millankumar = import ./home.nix;
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Other applications
+  programs.firefox.enable = true;
+  programs.zoom-us.enable = true;
 
   environment.systemPackages = with pkgs; [
     # hypr
