@@ -152,6 +152,7 @@
     pipewire
     wireplumber
     hyprpolkitagent
+    spotify
 
     # CLI editors
     vim
