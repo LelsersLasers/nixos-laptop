@@ -65,6 +65,7 @@
   # Enable the GNOME Plasma Desktop Environment
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+  services.gnome.core-os-services.enable = true;
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     gnome-user-docs
@@ -149,7 +150,6 @@
     waybar
     wofi
     swaynotificationcenter
-    pipewire
     wireplumber
     hyprpolkitagent
     spotify
