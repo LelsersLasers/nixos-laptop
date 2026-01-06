@@ -85,6 +85,8 @@
   # Enable hyprland
   programs.hyprland.enable = true;
   programs.waybar.enable = true;
+  programs.hypridle.enable = true;
+  programs.hyprlock.enable = true;
 
   # Allow ozone wayland backend
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -148,7 +150,6 @@
     hyprland
     hyprpaper
     hyprshot
-    waybar
     wofi
     swaynotificationcenter
     wireplumber
