@@ -51,8 +51,9 @@
        START_CHARGE_THRESH_BAT0 = 60; # 40 and below it starts to charge
        STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
       };
-};
-
+  };
+  # GNOME may try to enable power-profiles-daemon which conflicts with tlp
+  services.power-profiles-daemon.enable = false;
 
   # Caps lock = escape key
   services.xserver.xkb.options = "caps:escape";
