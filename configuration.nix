@@ -16,6 +16,20 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Suspend settings
+  services.logind.settings = {
+    Login = {
+      # Suspend after 15 min idle
+      IdleAction = "suspend";
+      IdleActionSec = 900;
+    
+      # Lid behavior (suspend on battery, ignore on AC)
+      HandleLidSwitch = "suspend";
+      HandleLidSwitchExternalPower = "ignore";
+      HandleLidSwitchDocked = "ignore";
+    };
+  };
+
 
   # Caps lock = escape key
   services.xserver.xkb.options = "caps:escape";
