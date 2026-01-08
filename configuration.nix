@@ -146,6 +146,9 @@
   programs.zoom-us.enable = true;
 
   environment.systemPackages = with pkgs; [
+    # system
+    pciutils
+
     # hypr
     hyprland
     hyprpaper
