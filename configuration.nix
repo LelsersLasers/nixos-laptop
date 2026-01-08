@@ -157,6 +157,7 @@
     wofi
     swaynotificationcenter
     wireplumber
+    playerctl
     hyprpolkitagent
 
     # CLI editors

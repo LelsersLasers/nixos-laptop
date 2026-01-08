@@ -4,6 +4,9 @@
     home.username = "millankumar";
     home.homeDirectory = "/home/millankumar";
 
+    # hypr
+    home.file.".config/hypr/".source = ./hypr;
+
     programs.bash = {
         enable = true;
         shellAliases = {
