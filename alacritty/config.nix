@@ -11,7 +11,7 @@
     };
 
     window = {
-      decorations = "None";
+      # decorations = "None";
       dynamic_padding = false;
       opacity = 0.95;
       blur = true;
