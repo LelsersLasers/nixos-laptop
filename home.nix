@@ -10,6 +10,7 @@
     home.file.".config/hypr/".source = ./hypr;
     home.file.".config/waybar/".source = ./waybar;
     home.file.".config/wofi/".source = ./wofi;
+    home.file.".config/wlogout/".source = ./wlogout;
 
     programs.bash = {
         enable = true;
