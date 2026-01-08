@@ -4,7 +4,7 @@
     home.username = "millankumar";
     home.homeDirectory = "/home/millankumar";
 
-    home.file.".config/hypr/".background = ./background;
+    home.file.".config/background/".source = ./background;
 
     # hypr
     home.file.".config/hypr/".source = ./hypr;
