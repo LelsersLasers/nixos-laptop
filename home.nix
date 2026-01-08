@@ -8,6 +8,7 @@
 
     # hypr
     home.file.".config/hypr/".source = ./hypr;
+    home.file.".config/waybar/".source = ./waybar;
     home.file.".config/wofi/".source = ./wofi;
 
     programs.bash = {
