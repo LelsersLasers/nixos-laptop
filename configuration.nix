@@ -85,7 +85,7 @@
   # Enable hyprland
   programs.hyprland.enable = true;
   programs.waybar.enable = true;
-  programs.hypridle.enable = true;
+  services.hypridle.enable = true;
   programs.hyprlock.enable = true;
 
   # Allow ozone wayland backend
