@@ -85,7 +85,7 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid @lavender;
+  border: 2px solid @green;
   border-radius: 8px;
   background-color: @base;
 }
@@ -146,18 +146,18 @@ window {
 
 #entry arrow {
   border: none;
-  color: @lavender;
+  color: @green;
 }
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.11em solid @lavender;
+  border: 0.11em solid @green;
 }
 
 #entry:selected #text {
-  color: @mauve;
+  color: @teal;
 }
 
 #entry:drop(active) {
-  background-color: @lavender!important;
+  background-color: @green!important;
 }
