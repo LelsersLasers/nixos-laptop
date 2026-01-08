@@ -149,6 +149,7 @@
     # hypr
     hyprland
     hyprpaper
+    hyprsunset
     hyprshot
     wofi
     swaynotificationcenter
