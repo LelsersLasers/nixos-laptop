@@ -161,6 +161,7 @@
     wireplumber
     playerctl
     hyprpolkitagent
+    pavucontrol
 
     # CLI editors
     vim
