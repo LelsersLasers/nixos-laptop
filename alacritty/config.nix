@@ -19,6 +19,22 @@
 
     font = {
       size = 13;
+      normal = {
+        family = "CaskaydiaCove Nerd Font";
+        style = "Regular";
+      };
+      bold = {
+        family = "CaskaydiaCove Nerd Font";
+        style = "Bold";
+      };
+      italic = {
+        family = "CaskaydiaCove Nerd Font";
+        style = "Italic";
+      };
+      bold_italic = {
+        family = "CaskaydiaCove Nerd Font";
+        style = "Bold Italic";
+      };
     };
 
     colors = {
