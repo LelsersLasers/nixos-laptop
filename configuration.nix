@@ -24,15 +24,6 @@
   virtualisation.vmware.guest.enable = true;
   services.xserver.videoDrivers = [ "vmware" ];
 
-  # Storage optimizations
-  nix.settings.auto-optimise-store = true;
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
-  };
-
-
   # Automatic clean up
   nix.gc = {
     automatic = true;
