@@ -162,6 +162,7 @@
     playerctl
     hyprpolkitagent
     pavucontrol
+    networkmanagerapplet
 
     # CLI editors
     vim
