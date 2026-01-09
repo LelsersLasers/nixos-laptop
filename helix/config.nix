@@ -90,6 +90,6 @@
       # Custom themes
       themes.rose_pine_moon_trans = {
         inherits = "rose_pine_moon";
-        ui.background = { };
+        "ui.background" = {};
       };
     }
