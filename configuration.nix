@@ -187,8 +187,7 @@
     owner = "shvchk";
     repo = "poly-light";
     rev = "7386e13abfaa8bc59524c02b4e027bac2872e908";
-    sha256 = "sha256-7kvLfD6Nz4cEMrmCA9yq4enyqVyqiTkVZV5y4RyUatU="; # TODO: fix
-    };
+    sha256 = "sha256-sQqVv2QgS7mAISBT3oFSwWRmhUEyclzV89xpzHDt9JA=";
   };
 
   # Allow unfree packages
