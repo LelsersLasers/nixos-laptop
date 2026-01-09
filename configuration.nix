@@ -7,9 +7,15 @@
     ];
 
   # Bootloader
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.loader.grub.useOSProber = true;
+  # BIOS
+  # boot.loader.grub.enable = true;
+  # boot.loader.grub.device = "/dev/sda";
+  # boot.loader.grub.useOSProber = true;
+  # EFI
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = false;
+
 
   # Hostname
   networking.hostName = "envy-millan";
@@ -182,13 +188,13 @@
     users.millankumar = import ./home.nix;
   };
 
-  # Grub theme
-  boot.loader.grub.theme = pkgs.fetchFromGitHub {
-    owner = "shvchk";
-    repo = "poly-light";
-    rev = "7386e13abfaa8bc59524c02b4e027bac2872e908";
-    sha256 = "sha256-sQqVv2QgS7mAISBT3oFSwWRmhUEyclzV89xpzHDt9JA=";
-  };
+  # Grub theme, BIOS only
+#   boot.loader.grub.theme = pkgs.fetchFromGitHub {
+#     owner = "shvchk";
+#     repo = "poly-light";
+#     rev = "7386e13abfaa8bc59524c02b4e027bac2872e908";
+#     sha256 = "sha256-sQqVv2QgS7mAISBT3oFSwWRmhUEyclzV89xpzHDt9JA=";
+#   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
