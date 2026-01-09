@@ -179,6 +179,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # Other applications
+  programs.starship.enable = true;
   programs.firefox.enable = true;
   programs.zoom-us.enable = true;
 

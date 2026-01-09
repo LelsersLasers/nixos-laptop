@@ -6,6 +6,8 @@
 
     home.file.".config/background/".source = ./background;
 
+    home.file.".config/starship.toml".source = ./starship.toml;
+
     # hypr
     home.file.".config/hypr/".source = ./hypr;
     home.file.".config/waybar/".source = ./waybar;
