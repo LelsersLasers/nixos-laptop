@@ -6,7 +6,7 @@
 
     home.file.".config/background/".source = ./background;
 
-    home.file.".config/starship.toml".source = ./startship/starship.toml;
+    home.file.".config/starship.toml".source = ./starship/starship.toml;
 
     # hypr
     home.file.".config/hypr/".source = ./hypr;
