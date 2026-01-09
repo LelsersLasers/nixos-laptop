@@ -182,6 +182,15 @@
     users.millankumar = import ./home.nix;
   };
 
+  # Grub theme
+  boot.loader.grub.theme = pkgs.fetchFromGitHub {
+    owner = "shvchk";
+    repo = "poly-light";
+    rev = "7386e13abfaa8bc59524c02b4e027bac2872e908";
+    sha256 = "sha256-7kvLfD6Nz4cEMrmCA9yq4enyqVyqiTkVZV5y4RyUatU="; # TODO: fix
+    };
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
