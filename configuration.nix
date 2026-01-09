@@ -210,6 +210,7 @@
     hyprpanel
     # pavucontrol
     # networkmanagerapplet
+    nwg-look
 
     # CLI editors
     vim
