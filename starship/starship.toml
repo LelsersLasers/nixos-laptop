@@ -1,14 +1,13 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](green)\
 $directory\
 [](bg:sapphire fg:green)\
 $git_branch\
 $git_status\
 [](bg:lavender fg:sapphire)\
 $python\
-[ ](fg:lavender)\
+[ ](fg:lavender)\
 $line_break\
 $character"""
 
