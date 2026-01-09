@@ -20,10 +20,6 @@
             ls = "eza -al";
             snrsfi = "sudo nixos-rebuild switch --flake . --impure";
         };
-        bashrcExtra = ''
-            # Starship prompt
-            eval "$(starship init bash)"
-        '';
     };
 
     programs.helix = import ./helix/config.nix;
