@@ -7,6 +7,7 @@
     home.file.".config/background/".source = ./background;
 
     home.file.".local/share/icons/BreezeX-Dark/".source = .themes/BreezeX-Dark;
+    home.file.".local/share/icons/Papirus-Dark/".source = .themes/Papirus-Dark;
 
     home.file.".config/starship.toml".source = ./starship/starship.toml;
 
