@@ -1,0 +1,84 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "menus.power.lowBatteryNotification": true,
+  "theme.bar.transparent": true,
+  "theme.font.size": "15px",
+  "terminal": "alacritty",
+  "theme.font.weight": 600,
+  "theme.bar.floating": false,
+  "theme.bar.menus.menu.clock.scaling": 80,
+  "menus.transitionTime": 0,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "clock",
+        "notifications"
+      ],
+      "right": [
+        "systray",
+        "media",
+        "volume",
+        "bluetooth",
+        "network",
+        "battery",
+        "dashboard"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.buttons.enableBorders": false,
+  "bar.launcher.icon": "$",
+  "bar.media.show_active_only": true,
+  "bar.network.showWifiInfo": true,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": true,
+  "bar.launcher.autoDetectIcon": false,
+  "theme.bar.buttons.workspaces.numbered_active_highlight_border": "0.2em",
+  "theme.bar.buttons.workspaces.numbered_active_highlight_padding": "0.2em",
+  "theme.bar.buttons.workspaces.numbered_inactive_padding": "0.2em",
+  "theme.bar.buttons.notifications.spacing": "0.5em",
+  "theme.bar.outer_spacing": "8px",
+  "theme.bar.border_radius": "8px",
+  "theme.bar.buttons.innerRadiusMultiplier": "0.4",
+  "theme.bar.buttons.padding_x": "0.7rem",
+  "theme.bar.buttons.volume.enableBorder": false,
+  "bar.clock.format": "%a %b %d  %I:%M %p",
+  "menus.clock.weather.enabled": false,
+  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.directories.enabled": false
+}
