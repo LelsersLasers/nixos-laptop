@@ -4,7 +4,7 @@
   ],
   "menus.power.lowBatteryNotification": true,
   "theme.bar.transparent": true,
-  "theme.font.size": "15px",
+  "theme.font.size": "13px",
   "terminal": "alacritty",
   "theme.font.weight": 600,
   "theme.bar.floating": false,

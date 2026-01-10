@@ -62,7 +62,7 @@
   # services.power-profiles-daemon.enable = false;
 
   # Caps lock = escape key
-  services.xserver.xkb.options = "caps:escape";
+  # services.xserver.xkb.options = "caps:escape";
 
   # VMware only
   # virtualisation.vmware.guest.enable = true;
