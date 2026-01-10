@@ -217,7 +217,7 @@
     hyprsunset
     hyprshot
     wofi
-    wlogout
+    # wlogout
     # swaynotificationcenter
     wireplumber
     playerctl

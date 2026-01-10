@@ -16,7 +16,7 @@
     home.file.".config/hypr/".source = ./hypr;
     # home.file.".config/waybar/".source = ./waybar;
     home.file.".config/wofi/".source = ./wofi;
-    home.file.".config/wlogout/".source = ./wlogout;
+    # home.file.".config/wlogout/".source = ./wlogout;
     # The line below should work, but there is no reason to make it read only while I am still playing with the config
     # home.file.".config/hyprpanel/config.json".source = ./hyprpanel/config.json;
 
