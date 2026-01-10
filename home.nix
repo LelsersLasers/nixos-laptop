@@ -17,6 +17,7 @@
     # home.file.".config/waybar/".source = ./waybar;
     home.file.".config/wofi/".source = ./wofi;
     home.file.".config/wlogout/".source = ./wlogout;
+    home.file.".config/hyprpanel/config.json".source = ./hyprpanel/config.json;
 
     programs.bash = {
         enable = true;
