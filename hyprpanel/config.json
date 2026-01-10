@@ -11,9 +11,10 @@
   "theme.bar.menus.menu.clock.scaling": 80,
   "menus.transitionTime": 0,
   "bar.layouts": {
-    "0": {
+    "*": {
       "left": [
         "workspaces",
+        "media",
         "windowtitle"
       ],
       "middle": [
@@ -22,42 +23,13 @@
       ],
       "right": [
         "systray",
-        "media",
+        "cpu",
+        "ram",
         "volume",
         "bluetooth",
         "network",
         "battery",
         "dashboard"
-      ]
-    },
-    "1": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
-      ]
-    },
-    "2": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
       ]
     }
   },
@@ -71,7 +43,7 @@
   "theme.bar.buttons.workspaces.numbered_active_highlight_border": "0.2em",
   "theme.bar.buttons.workspaces.numbered_active_highlight_padding": "0.2em",
   "theme.bar.buttons.workspaces.numbered_inactive_padding": "0.2em",
-  "theme.bar.buttons.notifications.spacing": "0.5em",
+  "theme.bar.buttons.notifications.spacing": "0.6em",
   "theme.bar.outer_spacing": "8px",
   "theme.bar.border_radius": "8px",
   "theme.bar.buttons.innerRadiusMultiplier": "0.4",
@@ -80,5 +52,10 @@
   "bar.clock.format": "%a %b %d  %I:%M %p",
   "menus.clock.weather.enabled": false,
   "menus.dashboard.shortcuts.enabled": false,
-  "menus.dashboard.directories.enabled": false
+  "menus.dashboard.directories.enabled": false,
+  "bar.notifications.show_total": true,
+  "theme.bar.buttons.modules.cpu.spacing": "0.6em",
+  "bar.customModules.ram.labelType": "percentage",
+  "bar.customModules.ram.round": true,
+  "theme.bar.buttons.modules.ram.spacing": "0.6em"
 }
