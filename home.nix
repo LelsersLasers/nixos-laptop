@@ -20,6 +20,17 @@
     # The line below should work, but there is no reason to make it read only while I am still playing with the config
     # home.file.".config/hyprpanel/config.json".source = ./hyprpanel/config.json;
 
+    # Default apps
+    xdg.mimeApps = {
+        enable = true;
+        defaultApplications = {
+            "x-scheme-handler/http"  = [ "google-chrome.desktop" ];
+            "x-scheme-handler/https" = [ "google-chrome.desktop" ];
+            "text/html"              = [ "google-chrome.desktop" ];
+        };
+    };
+
+
     programs.bash = {
         enable = true;
         shellAliases = {
