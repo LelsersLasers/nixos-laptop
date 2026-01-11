@@ -52,7 +52,7 @@ detect_extensions = []
 style = "fg:crust bg:lavender"
 format = '[$virtualenv ]($style)'
 
-[nix-shell]
+[nix_shell]
 style = "fg:crust bg:lavender"
 format = '[$symbol$state( \($name\))]($style)'
 
