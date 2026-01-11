@@ -35,6 +35,16 @@
       HandleLidSwitchDocked = "suspend";
     };
   };
+  # On lid close immediately lock screen -> hyprlock
+  # systemd.services.lock-on-sleep = {
+  #   description = "Lock Hyprland session before suspend";
+  #   wantedBy = [ "sleep.target" ];
+  #   before = [ "sleep.target" ];
+  #   serviceConfig = {
+  #     Type = "oneshot";
+  #     ExecStart = "${pkgs.systemd}/bin/loginctl lock-session";
+  #   };
+  # };
 
   # Laptop
   # Thermald proactively prevents overheating on Intel CPUs and works well with other tools
@@ -239,6 +249,7 @@
     htop
     eza
     cmatrix
+    ffmpeg
 
     # GUI apps
     google-chrome
@@ -247,6 +258,7 @@
     slack
     libreoffice-fresh
     spotify
+    kdePackages.kdenlive
 
     # GUI tools
     alacritty
@@ -258,6 +270,13 @@
     # Programming
     python3
     jdk
+    gcc
+    clang
+    libclang
+    clang-tools
+    gcc-arm-embedded
+    rust-analyzer
+    nodejs_22
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
