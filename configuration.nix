@@ -271,7 +271,7 @@
     python3
     jdk
     cmake
-    make
+    gnumake
     ninja
     gcc
     clang
@@ -279,7 +279,7 @@
     clang-tools
     gcc-arm-embedded
     openocd
-    stlink-tools
+    stlink-tool
     cargo
     rustc
     rust-analyzer
