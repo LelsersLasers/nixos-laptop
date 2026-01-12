@@ -60,5 +60,10 @@
   "theme.bar.buttons.modules.ram.spacing": "0.6em",
   "bar.workspaces.numbered_active_indicator": "underline",
   "theme.bar.buttons.windowtitle.spacing": "0.9em",
-  "theme.bar.buttons.media.spacing": "0.9em"
+  "theme.bar.buttons.media.spacing": "0.9em",
+  "theme.bar.buttons.modules.power.spacing": "0.45em",
+  "bar.customModules.power.icon": "$",
+  "theme.bar.menus.popover.scaling": 80,
+  "theme.bar.menus.menu.power.scaling": 90,
+  "scalingPriority": "hyprland"
 }

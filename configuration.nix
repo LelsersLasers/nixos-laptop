@@ -270,13 +270,19 @@
     # Programming
     python3
     jdk
+    cmake
+    make
+    ninja
     gcc
     clang
     libclang
     clang-tools
     gcc-arm-embedded
+    cargo
+    rustc
     rust-analyzer
     nodejs_22
+    vscode-langservers-extracted
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
