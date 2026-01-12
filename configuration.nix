@@ -281,8 +281,12 @@
     openocd
     stlink-tool
     cargo
+    rustfmt
+    clippy
     rustc
     rust-analyzer
+    systemd
+    pkg-config
     nodejs_22
     vscode-langservers-extracted
   ];
