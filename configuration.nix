@@ -278,6 +278,8 @@
     libclang
     clang-tools
     gcc-arm-embedded
+    openocd
+    stlink-tools
     cargo
     rustc
     rust-analyzer
