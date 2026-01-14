@@ -287,9 +287,19 @@
     rust-analyzer
     systemd
     pkg-config
+    wayland
+    wayland-protocols
+    libxkbcommon
+    mesa
+    libGL
     nodejs_22
     vscode-langservers-extracted
   ];
+
+  # Flash slcan firmware from google chrome
+  services.udev.extraRules = ''
+    SUBSYSTEMS=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="df11", MODE="0666"
+  '';
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

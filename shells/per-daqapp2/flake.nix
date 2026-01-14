@@ -21,8 +21,6 @@
           libxkbcommon
           mesa
           libGL
-          systemd
-          pkg-config
         ];
 
         shellHook = ''
