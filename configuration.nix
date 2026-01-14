@@ -264,6 +264,7 @@
     alacritty
     github-desktop
     vscode.fhs
+    zed-editor
     arduino #v1
     arduino-ide #v2
 
