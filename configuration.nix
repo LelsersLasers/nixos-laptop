@@ -22,6 +22,20 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  boot.kernelParams = [
+    "mem_sleep_default=deep"
+    "nvme_core.default_ps_max_latency_us=0"
+    "pcie_aspm=off"
+  ];
+  systemd.sleep.extraConfig = ''
+    [Sleep]
+    AllowSuspend=yes
+    AllowHibernation=no
+    AllowHybridSleep=no
+    AllowSuspendThenHibernate=no
+  '';
+
+
   # Suspend settings
   services.logind.settings = {
     Login = {
@@ -220,6 +234,7 @@
 
     # system
     pciutils
+    efibootmgr
 
     # hypr
     hyprland
