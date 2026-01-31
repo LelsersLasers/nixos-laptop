@@ -38,6 +38,10 @@
             ls = "eza -al";
             snrsfi = "sudo nixos-rebuild switch --flake . --impure";
         };
+
+        initExtra = ''
+            eval "$(direnv hook bash)"
+        '';
     };
 
     programs.helix = import ./helix/config.nix;
