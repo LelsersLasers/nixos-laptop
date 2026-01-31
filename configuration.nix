@@ -283,6 +283,7 @@
     zed-editor
     arduino #v1
     arduino-ide #v2
+    kicad
 
     # Programming
     python3
