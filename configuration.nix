@@ -200,7 +200,7 @@
   users.users.millankumar = {
     isNormalUser = true;
     description = "Millan Kumar";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "plugdev" ];
     packages = with pkgs; [ ];
   };
 
@@ -234,6 +234,7 @@
 
     # system
     pciutils
+    usbutils
     efibootmgr
 
     # hypr
@@ -315,6 +316,13 @@
   # Flash slcan firmware from google chrome
   services.udev.extraRules = ''
     SUBSYSTEMS=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="df11", MODE="0666"
+
+    # ST-LINK/V2
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="3748", MODE="0666", GROUP="plugdev"
+    # ST-LINK/V2-1
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="374b", MODE="0666", GROUP="plugdev"
+    # ST-LINK/V3
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="374f", MODE="0666", GROUP="plugdev"
   '';
 
   # Some programs need SUID wrappers, can be configured further or are
