@@ -312,6 +312,11 @@
     libGL
     nodejs_22
     vscode-langservers-extracted
+
+    # iQuHack 2026
+    python312
+    direnv
+    nix-direnv
   ];
 
   # Flash slcan firmware from google chrome
