@@ -326,6 +326,10 @@
   ];
 
   # Flash slcan firmware from google chrome
+  services.udev.packages = [ 
+    pkgs.platformio-core
+    pkgs.openocd
+  ];
   services.udev.extraRules = ''
     SUBSYSTEMS=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="df11", MODE="0666"
 
