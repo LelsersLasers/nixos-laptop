@@ -303,6 +303,7 @@
     gcc-arm-embedded
     openocd
     stlink-tool
+    platformio
     cargo
     rustfmt
     clippy
