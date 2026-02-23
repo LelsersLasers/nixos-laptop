@@ -200,7 +200,7 @@
   users.users.millankumar = {
     isNormalUser = true;
     description = "Millan Kumar";
-    extraGroups = [ "networkmanager" "wheel" "plugdev" ];
+    extraGroups = [ "networkmanager" "wheel" "plugdev" "docker"];
     packages = with pkgs; [ ];
   };
 
@@ -227,6 +227,11 @@
   programs.starship.enable = true;
   programs.firefox.enable = true;
   programs.zoom-us.enable = true;
+
+  # Docker
+  virtualisation.docker = {
+    enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
     # fonts
