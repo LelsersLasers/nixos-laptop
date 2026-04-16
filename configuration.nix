@@ -200,7 +200,7 @@
   users.users.millankumar = {
     isNormalUser = true;
     description = "Millan Kumar";
-    extraGroups = [ "networkmanager" "wheel" "plugdev" "docker"];
+    extraGroups = [ "networkmanager" "wheel" "plugdev" "docker" "wireshark" ];
     packages = with pkgs; [ ];
   };
 
@@ -231,6 +231,13 @@
   # Docker
   virtualisation.docker = {
     enable = true;
+  };
+
+  # Wireshark
+  programs.wireshark = {
+    enable = true;
+    dumpcap.enable = true;
+    usbmon.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -318,8 +325,6 @@
     libGL
     nodejs_22
     vscode-langservers-extracted
-
-    # iQuHack 2026
     python312
     direnv
     nix-direnv
