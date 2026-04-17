@@ -296,6 +296,7 @@
     arduino #v1
     arduino-ide #v2
     kicad
+    wireshark
 
     # Programming
     python3
