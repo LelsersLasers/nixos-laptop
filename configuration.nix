@@ -297,6 +297,8 @@
     arduino-ide #v2
     kicad
     wireshark
+    mission-planner
+    qgroundcontrol
 
     # Programming
     python3
