@@ -65,5 +65,6 @@
   "bar.customModules.power.icon": "$",
   "theme.bar.menus.popover.scaling": 80,
   "theme.bar.menus.menu.power.scaling": 90,
-  "scalingPriority": "hyprland"
+  "scalingPriority": "hyprland",
+  "bar.bluetooth.rightClick": "sudo rfkill unblock bluetooth"
 }
