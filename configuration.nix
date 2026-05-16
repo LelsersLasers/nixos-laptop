@@ -240,6 +240,11 @@
     usbmon.enable = true;
   };
 
+  # tailscale
+  services.tailscale = {
+    enable = true;
+  };
+  
   environment.systemPackages = with pkgs; [
     # fonts
     nerd-fonts.caskaydia-mono
