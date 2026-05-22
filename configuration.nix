@@ -364,6 +364,11 @@
     SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="013*", MODE:="0666"
   '';
 
+  # Fonts
+  fonts.packages = with pkgs; [
+    corefonts
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
