@@ -109,7 +109,7 @@
   hardware.bluetooth.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/Indianapolis";
+  time.timeZone = "America/Los_Angeles";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -240,6 +240,11 @@
     usbmon.enable = true;
   };
 
+  # tailscale
+  services.tailscale = {
+    enable = true;
+  };
+  
   environment.systemPackages = with pkgs; [
     # fonts
     nerd-fonts.caskaydia-mono
@@ -358,6 +363,11 @@
     KERNEL=="hidraw*", ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="013*", MODE:="0666"
     SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="013*", MODE:="0666"
   '';
+
+  # Fonts
+  fonts.packages = with pkgs; [
+    corefonts
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
