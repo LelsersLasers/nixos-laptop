@@ -96,7 +96,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than +3";  # Keep last 3 generations, delete older
+    options = "--delete-older-than 3d";  # Keep last 3 generations, delete older
   };
   nix.settings.auto-optimise-store = true;
 
@@ -227,6 +227,9 @@
   programs.starship.enable = true;
   programs.firefox.enable = true;
   programs.zoom-us.enable = true;
+
+  # VMWare host
+  virtualisation.vmware.host.enable = true;
 
   # Docker
   virtualisation.docker = {
