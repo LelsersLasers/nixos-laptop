@@ -336,7 +336,6 @@
     libGL
     nodejs_22
     vscode-langservers-extracted
-    python312
     direnv
     nix-direnv
 
