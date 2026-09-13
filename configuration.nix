@@ -340,6 +340,11 @@
     python312
     direnv
     nix-direnv
+
+    # Xournal++ and pen
+    xournalpp
+    libinput
+    evtest
   ];
 
   # Flash slcan firmware from google chrome
