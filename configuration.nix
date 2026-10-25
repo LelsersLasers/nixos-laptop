@@ -272,6 +272,9 @@
     # networkmanagerapplet
     nwg-look
 
+    # gnome
+    gnome-tweaks
+
     # CLI editors
     vim
     helix
