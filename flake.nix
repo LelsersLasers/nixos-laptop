@@ -13,19 +13,28 @@
       url = "github:helix-editor/helix/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, helix-master, home-manager, ... }:
+  outputs = { self, nixpkgs, helix-master, home-manager, antigravity-nix, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       helix = helix-master.packages.${system}.helix;
+      antigravity-pkgs = antigravity-nix.packages.${system};
     in {
       nixosConfigurations.envy-millan = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./configuration.nix
-          { _module.args.helix = helix; }
+          {
+            _module.args.helix = helix;
+            _module.args.antigravity-pkgs = antigravity-pkgs;
+          }
           home-manager.nixosModules.home-manager
         ];
       };

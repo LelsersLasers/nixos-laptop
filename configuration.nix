@@ -1,4 +1,4 @@
-{ config, pkgs, helix, ... }:
+{ config, pkgs, helix, antigravity-pkgs, ... }:
 
 {
   imports =
@@ -282,6 +282,11 @@
     # Code tools
     git
     gh
+
+    # antigravity
+    antigravity-pkgs.google-antigravity-no-fhs     # Base App
+    antigravity-pkgs.google-antigravity-ide-no-fhs # IDE
+    antigravity-pkgs.google-antigravity-cli        # CLI (agy)
 
     # CLI tools
     htop
