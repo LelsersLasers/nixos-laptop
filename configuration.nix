@@ -293,6 +293,7 @@
     eza
     cmatrix
     ffmpeg
+    ripgrep
 
     # GUI apps
     google-chrome
