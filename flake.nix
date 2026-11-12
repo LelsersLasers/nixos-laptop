@@ -18,14 +18,20 @@
       url = "github:jacopone/antigravity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprpanel-fork = {
+      url = "github:LelsersLasers/HyprPanel/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, helix-master, home-manager, antigravity-nix, ... }:
+  outputs = { self, nixpkgs, helix-master, home-manager, antigravity-nix, hyprpanel-fork, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       helix = helix-master.packages.${system}.helix;
       antigravity-pkgs = antigravity-nix.packages.${system};
+      hyprpanel = hyprpanel-fork.packages.${system}.hyprpanel;
     in {
       nixosConfigurations.envy-millan = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -34,6 +40,7 @@
           {
             _module.args.helix = helix;
             _module.args.antigravity-pkgs = antigravity-pkgs;
+            _module.args.hyprpanel = hyprpanel;
           }
           home-manager.nixosModules.home-manager
         ];

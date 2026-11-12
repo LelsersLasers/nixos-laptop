@@ -1,4 +1,4 @@
-{ config, pkgs, helix, antigravity-pkgs, ... }:
+{ config, pkgs, helix, antigravity-pkgs, hyprpanel, ... }:
 
 {
   imports =
